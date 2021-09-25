@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CURRENCY CONVERTER</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <script src="js/app.js" defer></script>
+    <script src="js/bootstrap.min.js" defer></script>
+  </head>
+  <body
+    class="d-flex justify-content-center align-items-center bg-dark text-white"
+  >
+    <header class="container-fluid text-center">
+      <h1><u> Convert Your Currency</u></h1>
+    </header>
+    <main class="container-fluid d-flex justify-content-evenly">
+      <div class="bid-container container">
+        <div class="bid-currency container text-center mt-20">
+          <h3>Bid Currency</h3>
+          <input
+            data-bid-currency-amount
+            class="w-50 p-md-3"
+            type="number"
+            placeholder="Enter amount to convert"
+          />
+        </div>
+
+        <div class="ask-currency container-fluid text-center my-4">
+          <input
+            data-bid-currency-symbol
+            class="w-50 p-md-3"
+            type="text"
+            placeholder="Enter Currency To Convert From"
+          />
+        </div>
+      </div>
+
+      <div class="ask-c container">
+        <div class="ask-currency container-fluid">
+          <h3>Ask Currency</h3>
+          <input
+            data-ask-currency-symbol
+            symbol
+            class="w-50 p-md-3"
+            type="text"
+            placeholder="Enter Currency To Convert To."
+          />
+        </div>
+      </div>
+    </main>
+
+    <button
+      data-convert-button
+      class="w-25 text-center p-md-3 text-center bg-light border-0"
+    >
+      Convert
+    </button>
+
+    <div data-results-display class="results text-white mt-5"></div>
+  </body>
+</html>

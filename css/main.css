@@ -1,0 +1,25 @@
+body {
+  flex-direction: column;
+}
+
+input {
+  text-transform: uppercase;
+}
+
+body > button {
+  font-size: 2em;
+  border-radius: 40px;
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid skyblue;
+}
+
+body > button:hover {
+  color: brown;
+}
+
+.results {
+  font-size: 2em;
+}
